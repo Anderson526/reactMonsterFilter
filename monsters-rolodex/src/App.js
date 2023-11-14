@@ -8,6 +8,7 @@ constructor(){
   super();
   this.state = {
     monsters: [],
+    monster_website: [],
   };
 }
 
@@ -19,6 +20,7 @@ componentDidMount(){
   .then((users) => this.setState(
     ()=>{
      return {monsters : users};
+    
     },()=>{
       console.log(this.state)
     }
